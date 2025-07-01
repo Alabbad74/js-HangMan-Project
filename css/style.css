@@ -1,0 +1,14 @@
+body {
+  background-color: #2c72b9;
+  text-align: center;
+}
+
+/*      Styling menu in (id="menu")   we use # bcz its an id*/
+#menu{
+background-color: rgb(122, 122, 122);
+font-size: 25px;
+display: flex;
+justify-content:flex-start;
+align-items:flex-start
+  cursor: pointer;
+}
