@@ -4,3 +4,4 @@
 # script defer | defer main delay in diffrent word
 # id= | to style just 1 element in css (#)
 # class= |to style many elements in css (.)
+# img src| to add image
