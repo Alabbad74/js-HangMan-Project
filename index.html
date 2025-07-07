@@ -2,36 +2,34 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HangMan</title>
-  <!-- to link my HTML to CSS file-->
-  <link rel="stylesheet" href="css/style.css">
-  <!--we use defer to tell the browser to wait html theeen tun javasript to avoid errors-->
-
+  <link rel="stylesheet" href="css/style.css" />
   <script src="js/app.js" defer></script>
 </head>
 
+
 <body class="main-page">
+
   <h1>HangMan</h1>
-  <h2>Guess the word before its too late!</h2>
-  <button id="menu">☰ </button>
-  <!--img src to add image-->
-  <img src="images/capital_10236769.png" alt="Menu Icon">
+  <h2>Guess the word before it's too late!</h2>
 
-  <button id="playbutton" class="play">Play</button>
-<button id="helpbutton" class="Help">Help</button>
+  <img src="images/capital_10236769.png" alt="Menu Icon" />
 
-<!-- Pop-out box -->
-<div id="helpPopup" style="display: none;" class="popup-box">
-  <p><strong>How to Play:</strong></p>
-  <ul>
-    <li>Enter just one letter with each guess</li>
-    <li>Too many incorrect guesses will end the game</li>
-    <li>if need help? Use the hint button above</li>
-    <li>Click Reset to try again</li>
-  </ul>
-</div>
+  <a href="game.html" class="play">Play</a>
+
+  <button id="helpbutton" class="help">Help</button>
+
+  <div id="helpPopup" style="display: none;" class="popup-box">
+    <p><strong>How to Play:</strong></p>
+    <ul>
+      <li>Enter just one letter with each guess</li>
+      <li>Too many incorrect guesses will end the game</li>
+      <li>If you need help, use the hint button</li>
+      <li>Click Reset to try again</li>
+    </ul>
+  </div>
 
 </body>
 

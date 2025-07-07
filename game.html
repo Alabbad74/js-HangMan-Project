@@ -9,15 +9,47 @@
   <script src="js/app.js" defer></script>
 </head>
 
-<body class="game-page">
-  <a href="index.html" class="back-link">Back to Menu</a>
-  <h1>Hangman Game</h1>
+<body id="game-page">
+  <header>
+    <h1>Hangman Game</h1>
+  </header>
 
-  <button id="menu-btn">☰</button>
-  <button id="hint-btn">Hint!</button>
-  <button id="reset-btn" class="reset-btn">Reset</button>
+  <main>
+    <div class="hangman-container">
+  <!-- Gallow is always visible -->
+  <div class="gallow">
+    <div class="gallow-vertical"></div>
+    <div class="gallow-top"></div>
+    <div class="gallow-rope"></div>
+  </div>
 
- 
+  <!-- Body parts shown one-by-one -->
+  <div class="hangman">
+    <div class="part" id="part-head"></div>
+    <div class="part" id="part-body"></div>
+    <div class="part" id="part-left-arm"></div>
+    <div class="part" id="part-right-arm"></div>
+    <div class="part" id="part-left-leg"></div>
+    <div class="part" id="part-right-leg"></div>
+  </div>
+</div>
+
+    <div id="word-display">- - - - - -</div>
+
+    <div id="input-Container">
+      <input type="text" id="letter-input" maxlength="1" placeholder="Enter a letter" />
+      <button id="submitbtn">Submit</button>
+    </div>
+    <!-- Hint Button and Text -->
+<button id="hint-btn">Hint</button>
+<p id="hint-text"></p>
+
+
+    <p id="message"></p>
+    <button id="resetbtn">Reset</button>
+
+    <a href="index.html"><button id="backbtn">Go Home</button></a>
+  </main>
 </body>
 
 </html>
