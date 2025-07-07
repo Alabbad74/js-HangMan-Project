@@ -1,4 +1,4 @@
-/* === Constants === */
+/*  Constants  */
 const helpButton = document.getElementById('helpbutton');
 const playButton = document.getElementById('playbutton');
 const helpPopup = document.getElementById('helpPopup');
@@ -6,12 +6,12 @@ const word = 'AHMAD';
 const maxChances = 6;
 const hint = 'It is a name of a person';
 
-/* === Game State === */
+/*  Game State */
 let guessedLetters = [];
 let wrongGuesses = [];
 let remainingChances = maxChances;
 
-/* === Cached Elements === */
+/*  Cached Elements */
 const wordDisplay = document.getElementById('word-display');
 const letterInput = document.getElementById('letter-input');
 const submitBtn = document.getElementById('submitbtn');
@@ -21,7 +21,7 @@ const hangmanParts = document.querySelectorAll('.hangman .part');
 const hintBtn = document.getElementById('hint-btn');
 const hintText = document.getElementById('hint-text');
 
-/* === Functions === */
+/*  Functions  */
 
 // Draw the word display with guessed letters or "_"
 function updateWordDisplay() {
@@ -37,14 +37,14 @@ function updateWordDisplay() {
   wordDisplay.textContent = display.trim();
 }
 
-// Show hangman parts based on number of wrong guesses
+// Show hangman parts based on number of wrong guesses//
 function updateHangmanDrawing() {
   for (let i = 0; i < hangmanParts.length; i++) {
     hangmanParts[i].style.display = i < wrongGuesses.length ? 'block' : 'none';
   }
 }
 
-// Check win/lose conditions
+// Check win/lose conditions//
 function checkGameStatus() {
   let allGuessed = true;
   for (let i = 0; i < word.length; i++) {
@@ -67,7 +67,7 @@ function checkGameStatus() {
   }
 }
 
-// Process user guess
+// Process user guess //
 function handleGuess() {
   let guess = letterInput.value.toUpperCase();
   letterInput.value = "";
@@ -77,7 +77,7 @@ function handleGuess() {
     guessedLetters.includes(guess) ||
     wrongGuesses.includes(guess)
   ) {
-    return; // Skip invalid or repeated guess
+    return; // Skip invalid or repeated guess //
   }
 
   if (word.includes(guess)) {
@@ -91,7 +91,7 @@ function handleGuess() {
   updateHangmanDrawing();
   checkGameStatus();
 
-  // Debugging output
+  // Debugging output //
   console.log("Guess submitted:", guess);
   console.log("Remaining chances:", remainingChances);
 }
@@ -108,7 +108,7 @@ function resetGame() {
   updateHangmanDrawing();
 }
 
-/* === Event Listeners === */
+/*  Event Listeners */
 
 if (submitBtn && letterInput) {
   submitBtn.addEventListener('click', handleGuess);
@@ -130,7 +130,7 @@ if (helpButton && helpPopup) {
   });
 }
 
-/* === Initial Display Setup === */
+/* Initial Display Setup  , It shows the ----- in the game page */
 if (wordDisplay) {
   updateWordDisplay();
   updateHangmanDrawing();
