@@ -1,23 +1,45 @@
-# Hangman Game
-http://localhost:5500/
+#  Hangman Game 
 
-## Game Description
-The game is built using HTML, CSS, and JavaScript.
-The player guesses the word one letter at a time.
-For every incorrect guess, a part of the stickman will be drawn.
-The game wil ends after 6 wrong guesses or when the full word is revealed.
+![Game Screenshot](./assets/screenshot.png)
 
-## To Run The Game
-1. click PLAY to start
-2. click help to know how to play
-3. you have to guess the letters in the input box
-4. there are Hint button for help
-5. For restart click RESET
-## Features
-- Win/Lose logic
-- Hint 
-- Help popup
-- Reset game button
-- Visual stickman drawing with each wrong guess
+## 🕹️ Description
+
+The game is built using HTML, CSS, and JavaScript.  
+The player guesses letters to figure out the hidden word.  
+With every wrong guess, a part of the stickman appears.  
+You lose after 6 mistakes, or win by guessing the word. 
+
+## 🚀 Getting Started 
+
+👉 **Play it here:** [https://alabbad74.github.io/js-HangMan-Project/](https://alabbad74.github.io/js-HangMan-Project/)
+
+
+
+## 🎮 How to Play
+
+1. Click “Play” to start the game.
+2. Type letters in the input box.
+3. Use the Hint button if needed.
+4. Use the Reset button to start again.
+5. Click Help to view instructions. 
+
+---
+
+## 💡 Features
+
+- ✅ Random word from a list of names  
+- ✅ Letter-by-letter guessing  
+- ✅ Win / Lose logic  
+- ✅ Stickman drawing on each wrong guess  
+- ✅ Hint button  
+- ✅ Help popup  
+- ✅ Reset button  
+
+
+## 🧰 Technologies Used
+
+- HTML  
+- CSS  
+- JavaScript  
 
 

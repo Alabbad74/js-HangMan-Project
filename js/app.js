@@ -2,8 +2,8 @@
 const helpButton = document.getElementById('helpbutton');
 const playButton = document.getElementById('playbutton');
 const helpPopup = document.getElementById('helpPopup');
-const word = 'AHMAD';
-const maxChances = 6;
+const words = ["ahmad", "fatima", "ali", "sara", "abdulla", "mohammed", "layla", "hassan", "reem", "omar","omar", "noura", "khalid", "yasmin", "sultan", "zainab", "saif", "amina", "huda", "salem", "yousef"];
+let word = words[Math.floor(Math.random() * words.length)].toUpperCase();const maxChances = 6;
 const hint = 'It is a name of a person';
 
 /*  Game State */
